@@ -70,13 +70,18 @@
                 android:layout_height="wrap_content"
                 android:text="@string/result" />
 
-            <ListView
-                android:id="@+id/list_detected_faces"
+            <ScrollView
+                android:id="@+id/recognized_faces"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="#E0E0E0"
-                android:verticalSpacing="@dimen/view_margin" />
+                android:verticalSpacing="@dimen/view_margin">
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
 
         </LinearLayout>
 

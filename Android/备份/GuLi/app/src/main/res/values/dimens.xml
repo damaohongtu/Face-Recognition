@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="default_edittext_height">40dp</dimen>
+    <dimen name="default_button_height">40dp</dimen>
+
+
+    <dimen name="common_horizontal_margin">10dp</dimen>
+    <dimen name="common_vertical_margin">10dp</dimen>
+    <dimen name="mainactivity_padding">10dp</dimen>
+
+    <dimen name="toolbarTextSize">16sp</dimen>
+
+    <dimen name="itemTextSize">16sp</dimen>
+    <dimen name="toastTextSize">18sp</dimen>
+
+    <dimen name="startActivityTextSize">50sp</dimen>
+
+    <!--主界面卡片文字大小-->
+
+    <dimen name="describeTextSize">12sp</dimen>
+    <dimen name="showTextSize">14sp</dimen>
+    <dimen name="tempTextSize">50sp</dimen>
+
+
+    <!--说明文字-->
+    <dimen name="textSize">18sp</dimen>
+
+
+    <dimen name="view_margin">5dp</dimen>
+</resources>

@@ -1,0 +1,16 @@
+package Services;
+import org.bytedeco.javacpp.opencv_core.Mat;
+
+import Engine.Face;
+
+public class GetTeacherInfo {
+	
+	//接收传过来的图片
+	
+	public void getTeacherInfo() throws Exception{
+		
+		Mat testImage=null;//将传入的图片进行处理
+		int label=Face.predict(testImage);//获取预测的标签
+		//下面从数据库请求数据，写回
+	}
+}

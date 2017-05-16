@@ -1,0 +1,28 @@
+package Services;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.ServletActionContext;
+
+import com.alibaba.fastjson.JSON;
+
+import Bean.Teacher;
+import DBUtil.DBHelper;
+
+public class Test {
+
+	public void test() throws IOException{
+		HttpServletRequest request=ServletActionContext.getRequest();
+		request.setCharacterEncoding("utf-8");
+		HttpServletResponse response=ServletActionContext.getResponse();
+		response.setContentType("text/html;charset=utf-8");
+		System.out.println("test...");
+		PrintWriter writer=response.getWriter();
+		writer.write("test");
+	}
+}

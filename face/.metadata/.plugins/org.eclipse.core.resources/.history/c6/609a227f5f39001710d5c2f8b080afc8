@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<Context>    
+  <Resource  
+    auth="Container"  
+    name="jdbc/Structs2DB"  
+    password="TianMao@19940818"  
+    username="root"  
+    type="javax.sql.DataSource"  
+    driverClassName="com.mysql.jdbc.Driver"  
+    url="jdbc:mysql://localhost:3306/students" ></Resource> 
+</Context>  

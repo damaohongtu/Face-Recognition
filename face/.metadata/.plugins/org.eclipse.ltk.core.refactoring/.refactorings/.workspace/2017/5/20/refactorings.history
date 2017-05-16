@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;FaceRecognition/WebContent/images/14.jpg&apos;" deleteContents="false" description="Delete resource &apos;FaceRecognition/WebContent/images/14.jpg&apos;" element1="/FaceRecognition/WebContent/images/14.jpg" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1494903308617"/>
+</session>

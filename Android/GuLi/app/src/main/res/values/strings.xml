@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GuLi</string>
     <string name="welcome1">Face</string>
-    <string name="welcome2">Defection</string>
+    <string name="welcome2">Recognition</string>
     <string name="image">Image:</string>
     <string name="select_image">Select\nImage</string>
     <string name="result">Result:</string>

@@ -1,0 +1,70 @@
+package Services;
+import org.apache.struts2.ServletActionContext;
+import org.bytedeco.javacpp.opencv_core.Mat;
+
+import java.io.File;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import Engine.Face;
+import com.alibaba.fastjson.JSON;
+
+import Bean.Teacher;
+import DBUtil.DBHelper;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.nio.IntBuffer;
+
+import static org.bytedeco.javacpp.opencv_core.CV_32SC1;
+import static org.bytedeco.javacpp.opencv_face.createFisherFaceRecognizer;
+import static org.bytedeco.javacpp.opencv_imgcodecs.imread;
+import static org.bytedeco.javacpp.opencv_imgcodecs.CV_LOAD_IMAGE_GRAYSCALE;
+
+import org.bytedeco.javacpp.opencv_face.FaceRecognizer;
+import org.bytedeco.javacpp.opencv_core.Mat;
+import org.bytedeco.javacpp.opencv_core.MatVector;
+
+
+
+
+public class GetTeacherInfo {
+	
+	//接收传过来的图片
+	private String imageName;
+	private File mPhoto;
+	
+	
+	public String getImageName() {
+		return imageName;
+	}
+
+	public void setImageName(String imageName) {
+		this.imageName = imageName;
+	}
+
+	public File getmPhoto() {
+		return mPhoto;
+	}
+
+	public void setmPhoto(File mPhoto) {
+		this.mPhoto = mPhoto;
+	}
+
+	public void getTeacherInfo() throws Exception{
+		
+		Mat testImage=imread("");//将传入的图片进行处理
+		int label=Face.predict(testImage);//获取预测的标签
+		//下面从数据库请求数据，写回		
+		HttpServletRequest request=ServletActionContext.getRequest();
+		request.setCharacterEncoding("utf-8");
+		HttpServletResponse response=ServletActionContext.getResponse();
+		response.setContentType("text/html;charset=utf-8");
+		PrintWriter writer=response.getWriter();
+		ArrayList<Teacher>teachers=new ArrayList<>();
+		teachers=DBHelper.getTeacher(label);
+		writer.write(JSON.toJSONString(teachers));
+	}
+}

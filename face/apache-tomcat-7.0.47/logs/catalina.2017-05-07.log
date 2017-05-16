@@ -1,0 +1,72 @@
+五月 07, 2017 8:18:17 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\anaconda\python.exe;C:\Windows\System32;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\namke.exe;C:\Perl\site\bin;C:\Perl\bin;C:\ProgramData\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Java\jdk1.8.0_101\bin;D:\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;E:\Matlab\runtime\win64;E:\Matlab\bin;E:\Matlab\polyspace\bin;D:\nodejs\;D:\Scala\bin;D:\go\bin;D:\anaconda;D:\anaconda\Scripts;D:\anaconda\Library\bin;D:\graphviz\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\nmake.exe;C:\Users\mao\AppData\Local\Microsoft\WindowsApps;C:\Users\mao\AppData\Roaming\npm;.
+五月 07, 2017 8:18:18 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+五月 07, 2017 8:18:18 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 07, 2017 8:18:19 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1622 ms
+五月 07, 2017 8:18:19 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 07, 2017 8:18:19 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.47
+五月 07, 2017 8:18:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\迅雷下载\apache-tomcat-7.0.47\apache-tomcat-7.0.47\webapps\docs
+五月 07, 2017 8:18:20 上午 org.apache.catalina.util.SessionIdGenerator createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [535] milliseconds.
+五月 07, 2017 8:18:20 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\迅雷下载\apache-tomcat-7.0.47\apache-tomcat-7.0.47\webapps\examples
+五月 07, 2017 8:18:22 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\迅雷下载\apache-tomcat-7.0.47\apache-tomcat-7.0.47\webapps\host-manager
+五月 07, 2017 8:18:22 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\迅雷下载\apache-tomcat-7.0.47\apache-tomcat-7.0.47\webapps\manager
+五月 07, 2017 8:18:22 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory F:\迅雷下载\apache-tomcat-7.0.47\apache-tomcat-7.0.47\webapps\ROOT
+五月 07, 2017 8:18:22 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+五月 07, 2017 8:18:22 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 07, 2017 8:18:22 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 3723 ms
+五月 07, 2017 8:19:42 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+五月 07, 2017 8:19:42 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+五月 07, 2017 8:19:42 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+五月 07, 2017 8:19:42 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+五月 07, 2017 8:19:42 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+五月 07, 2017 8:19:47 上午 org.apache.tomcat.util.net.AbstractEndpoint shutdownExecutor
+警告: The executor associated with thread pool [http-bio-8080] has not fully shutdown. Some application threads may still be running.
+五月 07, 2017 8:19:47 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+五月 07, 2017 8:19:47 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+五月 07, 2017 8:19:47 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+五月 07, 2017 8:19:52 上午 org.apache.catalina.startup.Catalina stopServer
+严重: Could not contact localhost:8005. Tomcat may not be running.
+五月 07, 2017 8:19:52 上午 org.apache.catalina.startup.Catalina stopServer
+严重: Catalina.stop: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:500)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:371)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:458)
+

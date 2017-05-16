@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.devMode" value="true" />
+    <package name="default" namespace="/" extends="struts-default">
+		
+    	<action name="LoginAction" method="login" class="Services.LoginAction"></action>
+    	<action name="Getsubjects" method="getAll" class="Students.Getsubjects"></action>
+    	<action name="Choosesubjects" method="choose" class="Students.Choosesubjects"></action>
+    	<action name="Delete" method="delete" class="Students.Delete"></action>
+    	<action name="Showsubjects" method="showsubjects" class="Students.Showsubjects"></action>
+    	<action name="Searchsubjects" method="search" class="Students.Searchsubjects"></action>
+    	<action name="Search2start" method="search2start" class="Teachers.Search2start"></action>
+    	<action name="Choose2change" method="choose2change" class="Teachers.Choose2change"></action>
+        <action name="Choose2start" method="choose2start" class="Teachers.Choose2start"></action>
+    	<action name="Search2student" method="search2Student" class="Teachers.Search2student"></action>
+    	<action name="Choose2delete" method="choose2delete" class="Teachers.Choose2delete"></action>
+    	<action name="Search2teacher" method="search2Student" class="Managers.Search2teacher"></action>
+    	<action name="Search2allstudent" method="search2Student" class="Managers.Search2allstudent"></action>
+    	<action name="Confirm2delete" method="choose2delete" class="Managers.Confirm2delete"></action>
+    	<action name="Add2student" method="add2student" class="Managers.Add2student"></action>
+    	<action name="Add2teacher" method="add2teacher" class="Managers.Add2teacher"></action>
+    	<action name="Change0pwd" method="change0pwd" class="Students.Change0pwd"></action>
+    	<action name="Change1pwd" method="change1pwd" class="Teachers.Change1pwd"></action>
+    </package>
+
+
+
+    <!-- Add packages here -->
+
+</struts>

@@ -1,0 +1,42 @@
+package Services;
+import org.apache.struts2.ServletActionContext;
+import org.bytedeco.javacpp.opencv_core.Mat;
+
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import Engine.Face;
+import com.alibaba.fastjson.JSON;
+
+import Bean.Teacher;
+import DBUtil.DBHelper;
+public class GetTeacherInfo {
+	
+	//接收传过来的图片
+	
+	public void getTeacherInfo() throws Exception{
+		
+		Mat testImage=null;//将传入的图片进行处理
+		int label=Face.predict(testImage);//获取预测的标签
+		//下面从数据库请求数据，写回
+		
+		HttpServletRequest request=ServletActionContext.getRequest();
+		request.setCharacterEncoding("utf-8");
+		HttpServletResponse response=ServletActionContext.getResponse();
+		response.setContentType("text/html;charset=utf-8");
+		PrintWriter writer=response.getWriter();
+		ArrayList<Teacher>teachers=new ArrayList<>();
+		teachers=DBHelper.getTeacher(label);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
